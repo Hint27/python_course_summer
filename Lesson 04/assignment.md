@@ -22,3 +22,28 @@
 3. **Centering a Title:**
    - Create a variable `title` and set it to the name of your favorite book, movie, or hobby.
    - Print the title centered within a string of `*` symbols, making the total width 30 characters using the `center()` method.
+
+### Example Code Snippet:
+
+```python
+# Message Formatting Program
+name = "Alex"
+age = 12
+favorite_quote = "The sky is the limit."
+
+# Format and align the fields
+print(f"Name: {name.ljust(20)} | Age: {str(age).center(20)} | Quote: {favorite_quote.rjust(20)}")
+
+# Add escape characters for better formatting
+print(f"\nFormatted Output:\nName:\t{name.ljust(20)}\nAge:\t{str(age).center(20)}\nQuote:\t{favorite_quote.rjust(20)}")
+
+# Stripping Extra Spaces Program
+message = "   Hello, Python!   "
+print(f"\nOriginal message: '{message}'")
+print(f"After lstrip: '{message.lstrip()}'")
+print(f"After rstrip: '{message.rstrip()}'")
+print(f"After strip: '{message.strip()}'")
+
+# Centering a Title
+title = "Python Programming"
+print(f"\n{title.center(30, '*')}")
