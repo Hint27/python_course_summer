@@ -29,3 +29,46 @@
    - Use the `clear()` method to remove all items from the list and print the empty list.
    - Mimic resetting the list by adding new items to it using the `append()` method.
    - Print the "reset" list with the new items.
+
+### Example Code Snippet:
+
+```python
+# Favorite Fruits List
+favorite_fruits = ["Apple", "Banana", "Orange", "Grapes", "Mango"]
+
+# Modify the list with different methods
+favorite_fruits.append("Pineapple")
+favorite_fruits.insert(1, "Strawberry")
+favorite_fruits.remove("Orange")
+last_fruit = favorite_fruits.pop()
+
+# Print the results
+print(f"Updated fruits list: {favorite_fruits}")
+print(f"Last fruit removed: {last_fruit}")
+
+# Number List Operations
+numbers = [4, 7, 1, 9, 3]
+
+numbers.sort()  # Sort the list
+print(f"Sorted numbers: {numbers}")
+
+numbers.reverse()  # Reverse the list
+print(f"Reversed numbers: {numbers}")
+
+print(f"Length of the list: {len(numbers)}")
+print(f"Sum of the numbers: {sum(numbers)}")
+
+# Mimic List Reset
+reset_list = ["Book", 42, "Laptop", 19.99]
+print(f"Original list: {reset_list}")
+
+reset_list.clear()  # Clear the list
+print(f"List after clear(): {reset_list}")
+
+# Mimic reset by adding new items
+reset_list.append("Phone")
+reset_list.append("Tablet")
+reset_list.append(99)
+reset_list.append("Notebook")
+
+print(f"Reset list: {reset_list}")
