@@ -34,3 +34,42 @@
    - Unpack the first item into one variable, and unpack the remaining items into another variable.
    - Print both the first item and the remaining items.
    - Also, unpack the first and last items, and store the middle items in a separate variable.
+
+### Example Code Snippet:
+
+```python
+# Create a Tuple
+my_favorites = ('Apple', 12, True)
+print(my_favorites)
+
+my_numbers = tuple((10, 20, 30))
+print(my_numbers)
+
+# Access and Slice Tuples
+print(my_favorites[0])  # First item
+print(my_favorites[-1])  # Last item
+print(my_favorites[:2])  # First two items
+print(my_favorites[1:])  # Everything except the first item
+
+# Check Existence in Tuples
+print('Apple' in my_favorites)
+print(42 in my_numbers)
+
+# Tuple Methods
+my_tuple = (5, 10, 5, 20, 5)
+print(my_tuple.count(5))  # Count occurrences of 5
+print(my_tuple.index(10))  # Find the index of 10
+
+# Unpacking Tuples
+food_items = ('Pizza', 'Burger', 'Salad', 'Pasta', 'Sushi')
+
+# Unpack first item and the remaining items
+(first_food, *remaining_food) = food_items
+print(first_food)
+print(remaining_food)
+
+# Unpack first, middle, and last items
+(first_food, *middle_food, last_food) = food_items
+print(first_food)
+print(middle_food)
+print(last_food)
