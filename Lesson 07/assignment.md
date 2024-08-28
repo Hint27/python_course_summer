@@ -1,4 +1,4 @@
-# Python Assignment: Summer Class -- Lesson 07
+# Python Assignment: Summer Class
 
 ### Instructions:
 1. Write comments to explain your code.
@@ -41,3 +41,61 @@
    - Print the entire `classroom` dictionary.
    - Access and print the `"name"` of the second student in the classroom.
    - Update the `"grade"` of the third student and print the updated student information.
+
+### Correction:
+
+```python
+# Create a Car Dictionary
+car = {
+    "brand": "Tesla",
+    "model": "Model S",
+    "year": 2020,
+    "electric": True
+}
+print(car)
+
+# Access and Modify Dictionary Items
+print(car["brand"])
+print(car.get("model"))
+
+car["year"] = 2022
+car["color"] = "Red"
+print(car)
+
+# Dictionary Methods
+person = {
+    "name": "Alice",
+    "age": 25,
+    "city": "New York"
+}
+print(person.keys())
+print(person.values())
+print(person.items())
+
+print("name" in person)
+
+# Updating and Removing Items
+person["hobby"] = "Reading"
+removed_value = person.pop("age")
+print(person)
+print(removed_value)
+
+# Copying and Clearing Dictionaries
+car_copy = car.copy()
+car.clear()
+
+print(car)
+print(car_copy)
+
+# Nested Dictionaries
+classroom = {
+    "student1": {"name": "John", "age": 12, "grade": "A"},
+    "student2": {"name": "Mary", "age": 11, "grade": "B"},
+    "student3": {"name": "Eli", "age": 13, "grade": "A-"}
+}
+print(classroom)
+print(classroom["student2"]["name"])
+
+# Update third student's grade
+classroom["student3"]["grade"] = "A+"
+print(classroom["student3"])
