@@ -42,3 +42,53 @@
    - If the user is eligible, print `"You are eligible to vote, [Name]!"`.
    - If the user is not eligible, print `"You need to wait until you are 18 to vote."`.
 
+### Example Code Snippet:
+
+```python
+# Set Operations
+fruits = {"apple", "banana", "cherry"}
+fruits.add("orange")
+fruits.update({"mango", "grape"})
+fruits.remove("banana")
+fruits.discard("apple")
+print(fruits)
+
+# Operators
+a = 15
+b = 10
+
+print(a + b)
+print(a - b)
+print(a * b)
+print(a / b)
+print(a % b)
+print(a ** 2)
+print(a // b)
+
+a += 5
+b -= 3
+a *= 2
+b /= 5
+print(round(b))
+
+print(a == b)
+print(a != b)
+print(a > b)
+print(a < b)
+print(a >= b)
+print(a <= b)
+
+# Conditional Statement: Driving Eligibility
+age = int(input("What is your age? "))
+if age >= 18:
+    print("You are eligible to drive!")
+else:
+    print("You need to wait until you are 18 to drive.")
+
+# Voting Application
+name = input("What is your name? ")
+age = int(input("What is your age? "))
+if age >= 18:
+    print(f"You are eligible to vote, {name}!")
+else:
+    print("You need to wait until you are 18 to vote.")
