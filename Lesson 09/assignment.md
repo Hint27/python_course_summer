@@ -31,3 +31,46 @@
    - Create two lists: `fruits = ["Apple", "Banana", "Cherry"]` and `colors = ["Red", "Yellow", "Green"]`.
    - Use nested `for` loops to print each combination of fruit and color, in the format `"Fruit - Color"`.
    - If the fruit is `"Banana"` and the color is `"Yellow"`, print `"Banana is yellow!"` and use `break` to exit the inner loop.
+
+### Example Code Snippet:
+
+```python
+# While Loop
+x = 1
+while x <= 15:
+    if x == 10:
+        x += 1
+        continue
+    print(x)
+    x += 1
+    if x > 15:
+        break
+print("Loop ended")
+
+# For Loop with Lists
+colors = ["Red", "Green", "Blue", "Yellow", "Purple"]
+for color in colors:
+    if color == "Blue":
+        continue
+    print(color)
+print("Finished printing colors")
+
+# For Loop with Strings
+for char in "Python":
+    print(char)
+print("End of string")
+
+# For Loop with Range
+for num in range(10, 51, 10):
+    print(num)
+print("Range loop completed")
+
+# Nested Loops
+fruits = ["Apple", "Banana", "Cherry"]
+colors = ["Red", "Yellow", "Green"]
+for fruit in fruits:
+    for color in colors:
+        print(f"{fruit} - {color}")
+        if fruit == "Banana" and color == "Yellow":
+            print("Banana is yellow!")
+            break
